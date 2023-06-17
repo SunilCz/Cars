@@ -85,3 +85,9 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   
     return newPathname;
   };
+
+  export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
+  }
+  

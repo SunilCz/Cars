@@ -50,4 +50,9 @@ export interface FilterProps {
     title: string;
     value: string;
   }
-  
+  export type CarState = CarProps[] & { message?: string };
+
+  export interface SearchBarProps {
+    setManuFacturer: (manufacturer: string) => void;
+    setModel: (model: string) => void;
+  }
