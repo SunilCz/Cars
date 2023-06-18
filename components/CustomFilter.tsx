@@ -23,7 +23,7 @@ export default function CustomFilter({ title, options, setFilter }: CustomFilter
           setFilter(e.value); // Update the URL search parameters and navigate to the new URL
         }}
       >
-        <div className='relative w-fit z-10'>
+        <div className='relative w-fit '>
           {/* Button for the listbox */}
           <Listbox.Button className='custom-filter__btn'>
             <span className='block truncate'>{selected.title}</span>
