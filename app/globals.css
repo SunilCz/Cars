@@ -149,6 +149,7 @@
 /* START: Custom Filter styles */
 .custom-filter__btn {
   @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
+ 
 }
 
 .custom-filter__options {
@@ -202,7 +203,7 @@
 
 /* START: search manufacturer styles */
 .search-manufacturer {
-  @apply flex-1 max-sm:w-full flex justify-start items-center;
+  @apply flex-1 max-sm:w-full flex justify-start items-center z-10;
 }
 
 .search-manufacturer__input {
@@ -210,8 +211,10 @@
 }
 
 .search-manufacturer__options {
-  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm z-10 origin-top bottom-full;
 }
+
+
 
 .search-manufacturer__option {
   @apply cursor-default select-none py-2 pl-10 pr-4;
